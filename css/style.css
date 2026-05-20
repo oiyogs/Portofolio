@@ -439,10 +439,14 @@ ul { list-style: none; }
   padding: 20px 12px;
   text-align: center;
   transition: var(--transition);
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
 }
 .stat-card:hover {
-  border-color: var(--border-hover);
+  border-color: var(--accent-cyan);
   transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
 }
 
 .stat-num {

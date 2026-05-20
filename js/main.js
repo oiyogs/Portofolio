@@ -128,6 +128,23 @@ tabBtns.forEach(btn => {
   });
 });
 
+/* stat cards → experience tab switching */
+document.querySelectorAll('.stat-card[data-tab]').forEach(card => {
+  card.addEventListener('click', () => {
+    const tab = card.dataset.tab;
+    tabBtns.forEach(b => {
+      b.classList.toggle('active', b.dataset.tab === tab);
+    });
+    if (tab === 'work') {
+      workTimeline.classList.remove('hidden');
+      orgTimeline.classList.add('hidden');
+    } else {
+      orgTimeline.classList.remove('hidden');
+      workTimeline.classList.add('hidden');
+    }
+  });
+});
+
 /* ============================================================
    PROJECT FILTER
    ============================================================ */
