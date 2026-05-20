@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Komang Yoga Suputra — Data Scientist</title>
+  <meta name="description" content="Portfolio of Komang Yoga Suputra, Data Scientist & AI Engineer from Telkom University." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>KYS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="SourceDataDiri/cv.pdf" class="btn btn-outline btn-sm" target="_blank">Resume</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <p class="hero-greeting fade-in">Hi, I'm</p>
+        <h1 class="hero-name fade-in delay-1">Komang Yoga<br /><span class="gradient-text">Suputra</span></h1>
+        <div class="hero-roles fade-in delay-2">
+          <span class="role-static">I build </span>
+          <span class="role-dynamic" id="roleDynamic"></span>
+          <span class="role-cursor">|</span>
+        </div>
+        <p class="hero-desc fade-in delay-3">
+          Data Scientist & AI Engineer passionate about transforming raw data into meaningful insights.
+          Currently studying at <span class="highlight">Telkom University</span>.
+        </p>
+        <div class="hero-cta fade-in delay-4">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-social fade-in delay-5">
+          <a href="https://github.com/oiyogs" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/komang-yoga-suputra-b61037310/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:yogasuputra169@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/6282239663660" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="hero-image fade-in delay-2">
+        <div class="image-frame">
+          <img src="assets/images/profile.jpeg" alt="Komang Yoga Suputra" id="profileImg" onerror="this.style.display='none';document.getElementById('imagePlaceholder').style.display='flex'" />
+          <div class="image-placeholder" id="imagePlaceholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="hero-badge badge-1"><i class="fas fa-brain"></i> AI/ML</div>
+        <div class="hero-badge badge-2"><i class="fas fa-chart-bar"></i> Data Analytics</div>
+        <div class="hero-badge badge-3"><i class="fab fa-python"></i> Python Pro</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-img-container">
+            <img src="assets/images/profile.jpeg" alt="Komang Yoga Suputra"
+              onerror="this.style.display='none';document.getElementById('aboutPlaceholder').style.display='flex'" />
+            <div class="about-img-placeholder" id="aboutPlaceholder">
+              <i class="fas fa-user-circle"></i>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Organizations</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">1</span>
+              <span class="stat-label">Internship</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3>Data Scientist & <span class="gradient-text">AI Enthusiast</span></h3>
+          <p>
+            I'm a Data Science student at Telkom University with a strong passion for building intelligent
+            systems that solve real-world problems. My journey in tech is driven by curiosity and a love
+            for turning complex data into clear, actionable insights.
+          </p>
+          <p>
+            Beyond the technical side, I'm a people person — I thrive in collaborative environments and
+            have led organizations at the university level. I believe great technology is built not just
+            with code, but with empathy and clear communication.
+          </p>
+          <div class="about-info">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> Bandung, Indonesia</div>
+            <div class="info-item"><i class="fas fa-university"></i> Telkom University</div>
+            <div class="info-item"><i class="fas fa-envelope"></i> yogasuputra169@gmail.com</div>
+            <div class="info-item"><i class="fas fa-phone"></i> +62 822-3966-3660</div>
+          </div>
+          <a href="SourceDataDiri/cv.pdf" class="btn btn-primary" target="_blank">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Tools</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-code"></i> Technical</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Python</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Machine Learning</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Data Analysis</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Deep Learning</span><span>70%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Database Engineering</span><span>65%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-tools"></i> Tools & Tech</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-tag"><i class="fas fa-brain"></i> TensorFlow</span>
+            <span class="skill-tag"><i class="fas fa-fire"></i> PyTorch</span>
+            <span class="skill-tag"><i class="fas fa-chart-pie"></i> Pandas</span>
+            <span class="skill-tag"><i class="fas fa-chart-line"></i> Matplotlib</span>
+            <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+            <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-tag"><i class="fas fa-elephant"></i> Hadoop</span>
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+            <span class="skill-tag"><i class="fas fa-palette"></i> Canva</span>
+            <span class="skill-tag"><i class="fas fa-globe"></i> Web Dev</span>
+            <span class="skill-tag"><i class="fas fa-chart-bar"></i> Power BI</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="soft-skills">
+            <div class="soft-skill-item">
+              <div class="soft-icon"><i class="fas fa-sitemap"></i></div>
+              <div>
+                <h4>Project Management</h4>
+                <p>Leading teams and delivering projects on time</p>
+              </div>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-icon"><i class="fas fa-microphone"></i></div>
+              <div>
+                <h4>Public Speaking</h4>
+                <p>Presenting ideas clearly to diverse audiences</p>
+              </div>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-icon"><i class="fas fa-crown"></i></div>
+              <div>
+                <h4>Leadership</h4>
+                <p>Chairing organizations and motivating teams</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My journey</span>
+        <h2 class="section-title">Experience & <span class="gradient-text">Organizations</span></h2>
+      </div>
+      <div class="timeline-tabs">
+        <button class="tab-btn active" data-tab="work">Work</button>
+        <button class="tab-btn" data-tab="org">Organizations</button>
+      </div>
+      <div class="timeline" id="workTimeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>AI Engineer</h3>
+                <span class="timeline-company">PT Sigma Cipta Caraka (Telkomsigma)</span>
+              </div>
+              <span class="timeline-date">Jul — Aug 2025</span>
+            </div>
+            <p>Designed and developed an AI-based system for automated corporate document extraction. Implemented an OCR pipeline to digitize and process company documents, conducted data preprocessing and cleaning, and researched AI/ML approaches to improve information retrieval efficiency.</p>
+            <div class="timeline-tags">
+              <span>Python</span><span>OCR</span><span>Machine Learning</span><span>AI Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline hidden" id="orgTimeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Chairman</h3>
+                <span class="timeline-company">Hindu Student Family (KMH) Telkom University</span>
+              </div>
+              <span class="timeline-date">2026 — Now</span>
+            </div>
+            <p>Led and coordinated all organizational activities and strategic directions. Ensured implementation of work programs aligned with the organization's vision, oversaw governance, and represented the organization in official forums and institutional engagements.</p>
+            <div class="timeline-tags">
+              <span>Leadership</span><span>Strategic Planning</span><span>Cultural</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Vice Chairman</h3>
+                <span class="timeline-company">Student Association Data Science Telkom University</span>
+              </div>
+              <span class="timeline-date">2025 — 2026</span>
+            </div>
+            <p>Assisted the chairman in coordinating divisions and executing work programs. Supervised internal operations, oversaw monitoring and evaluation systems, and strengthened internal relations among board members.</p>
+            <div class="timeline-tags">
+              <span>Leadership</span><span>Academic</span><span>Data Science</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Head of Community Service Division</h3>
+                <span class="timeline-company">UKM Tim Budi Pekerti</span>
+              </div>
+              <span class="timeline-date">2024 — 2025</span>
+            </div>
+            <p>Coordinated activity timelines for the community service division, ensured work programs were implemented on schedule, and fostered relationships among members to strengthen social engagement.</p>
+            <div class="timeline-tags">
+              <span>Leadership</span><span>Community Service</span><span>Coordination</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Chief Executive — SISOBER Program</h3>
+                <span class="timeline-company">UKM Tim Budi Pekerti</span>
+              </div>
+              <span class="timeline-date">2024 — 2025</span>
+            </div>
+            <p>Led the Social Action and Sharing Program (SISOBER), coordinating division heads, collaborating with management and advisor, and conducting periodic evaluations to monitor program progress.</p>
+            <div class="timeline-tags">
+              <span>Event Management</span><span>Social Action</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Chief Executive — PASUPATI Event</h3>
+                <span class="timeline-company">KMH Telkom University</span>
+              </div>
+              <span class="timeline-date">2023 — 2024</span>
+            </div>
+            <p>Coordinated division heads and collaborated with the Steering Committee (SC) of PASUPATI 2022–2023. Worked with the KMH advisor and Pura Temple as the event venue, and conducted regular evaluations across all divisions.</p>
+            <div class="timeline-tags">
+              <span>Event Management</span><span>Cultural</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="bi">Business Intel</button>
+        <button class="filter-btn" data-filter="nlp">NLP / AI</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-category="web nlp">
+          <div class="project-img">
+            <img src="SourceImages/kbgo.jpg" alt="KBGO Detection Website"
+              onerror="this.parentElement.querySelector('.project-img-placeholder').style.display='flex';this.style.display='none'" />
+            <div class="project-img-placeholder"><i class="fas fa-globe"></i></div>
+            <div class="project-overlay">
+              <a href="https://huggingface.co/spaces/oiyogss/CapstoneProject" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/oiyogs/KBGO-Detection" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="tag-web">Web Dev</span><span class="tag-nlp">NLP</span></div>
+            <h3>KBGO Detection Website</h3>
+            <p>A web application for detecting Gender-Based Online Violence (KBGO) using NLP and text classification models.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>NLP</span><span>BERT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="bi">
+          <div class="project-img">
+            <img src="SourceImages/dashboard.jpg" alt="BI Dashboard"
+              onerror="this.parentElement.querySelector('.project-img-placeholder').style.display='flex';this.style.display='none'" />
+            <div class="project-img-placeholder"><i class="fas fa-chart-bar"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="tag-bi">Business Intel</span></div>
+            <h3>Business Intelligence Dashboard</h3>
+            <p>Interactive BI dashboard for visualizing business KPIs, trends, and performance metrics with drill-down capabilities.</p>
+            <div class="project-tech">
+              <span>Power BI</span><span>SQL</span><span>DAX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ml">
+          <div class="project-img">
+            <img src="SourceImages/churn.jpg" alt="Churn Prediction"
+              onerror="this.parentElement.querySelector('.project-img-placeholder').style.display='flex';this.style.display='none'" />
+            <div class="project-img-placeholder"><i class="fas fa-user-times"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="tag-ml">Machine Learning</span></div>
+            <h3>Churn Prediction Model</h3>
+            <p>Customer churn prediction using ensemble ML methods to help businesses retain at-risk customers.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Pandas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ml">
+          <div class="project-img">
+            <img src="SourceImages/stock.jpg" alt="NVIDIA Stock Prediction"
+              onerror="this.parentElement.querySelector('.project-img-placeholder').style.display='flex';this.style.display='none'" />
+            <div class="project-img-placeholder"><i class="fas fa-chart-line"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="#" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="tag-ml">Machine Learning</span></div>
+            <h3>NVIDIA Stock Prediction</h3>
+            <p>Time-series forecasting of NVIDIA stock prices using ARMA, ARIMA, SARIMA, and SARMA models.</p>
+            <div class="project-tech">
+              <span>Python</span><span>ARIMA</span><span>SARIMA</span><span>Statsmodels</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ml">
+          <div class="project-img">
+            <img src="SourceImages/segmentation.jpg" alt="Customer Segmentation"
+              onerror="this.parentElement.querySelector('.project-img-placeholder').style.display='flex';this.style.display='none'" />
+            <div class="project-img-placeholder"><i class="fas fa-users-cog"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/oiyogs/Customer-Segmentation-Project" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="tag-ml">Machine Learning</span></div>
+            <h3>Customer Segmentation</h3>
+            <p>Clustering-based customer segmentation to identify distinct customer groups for targeted marketing.</p>
+            <div class="project-tech">
+              <span>Python</span><span>K-Means</span><span>DBSCAN</span><span>Seaborn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ml">
+          <div class="project-img">
+            <img src="SourceImages/price.jpg" alt="Clothing Price Prediction"
+              onerror="this.parentElement.querySelector('.project-img-placeholder').style.display='flex';this.style.display='none'" />
+            <div class="project-img-placeholder"><i class="fas fa-tags"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/oiyogs/Clothing-Price-Prediction" class="btn btn-sm btn-outline" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="tag-ml">Machine Learning</span></div>
+            <h3>Clothing Price Prediction</h3>
+            <p>Predicting clothing item prices using regression models and feature engineering on product attributes.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Regression</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's talk</span>
+        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's work together</h3>
+          <p>I'm always open to discussing new opportunities, collaborations, or just having a great conversation about data and AI.</p>
+          <div class="contact-cards">
+            <a href="mailto:yogasuputra169@gmail.com" class="contact-card">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div><h4>Email</h4><p>yogasuputra169@gmail.com</p></div>
+            </a>
+            <a href="https://wa.me/6282239663660" class="contact-card" target="_blank">
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div><h4>WhatsApp</h4><p>+62 822-3966-3660</p></div>
+            </a>
+            <a href="https://www.linkedin.com/in/komang-yoga-suputra-b61037310/" class="contact-card" target="_blank">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div><h4>LinkedIn</h4><p>Connect with me</p></div>
+            </a>
+            <a href="https://github.com/oiyogs" class="contact-card" target="_blank">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div><h4>GitHub</h4><p>See my code</p></div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's it about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>KYS<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Crafted with <i class="fas fa-heart" style="color: var(--accent-pink)"></i> by Komang Yoga Suputra</p>
+        <div class="footer-social">
+          <a href="https://github.com/oiyogs" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/komang-yoga-suputra-b61037310/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:yogasuputra169@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2025 Komang Yoga Suputra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
