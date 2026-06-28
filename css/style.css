@@ -996,7 +996,7 @@ ul { list-style: none; }
 .footer-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 24px;
   margin-bottom: 24px;
   flex-wrap: wrap;

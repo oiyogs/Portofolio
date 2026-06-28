@@ -77,7 +77,7 @@ D:\kuliah\Portofolio\
 ├── SourceImages/           ← Taruh screenshot project di sini
 ├── SourceTubes/            ← Diabaikan di git (.gitignore)
 ├── .gitignore
-└── CLAUDE.md               ← File ini
+└── AGENTS.md               ← File ini
 ```
 
 ---

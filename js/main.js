@@ -146,6 +146,23 @@ document.querySelectorAll('.stat-card[data-tab]').forEach(card => {
 });
 
 /* ============================================================
+   PROJECT LINK BUTTONS — show only when a real link is filled in
+   (href empty or "#" → button removed; overlay hidden if none left)
+   ============================================================ */
+document.querySelectorAll('.project-overlay').forEach(overlay => {
+  let hasLink = false;
+  overlay.querySelectorAll('a').forEach(a => {
+    const href = (a.getAttribute('href') || '').trim();
+    if (href === '' || href === '#') {
+      a.remove();
+    } else {
+      hasLink = true;
+    }
+  });
+  if (!hasLink) overlay.style.display = 'none';
+});
+
+/* ============================================================
    PROJECT FILTER
    ============================================================ */
 const filterBtns   = document.querySelectorAll('.filter-btn');
