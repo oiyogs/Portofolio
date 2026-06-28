@@ -34,6 +34,7 @@ Tech stack: HTML5, CSS3 (Vanilla), JavaScript (Vanilla) — no framework, pure s
 - [x] Foto profil dikompres: 3,7 MB (3000×4000) → 197 KB (750×1000), file `.jpeg` lama dihapus
 - [x] Footer dibersihkan: hapus logo `<KYS/>` & teks "Crafted...", social icon rata kanan, copyright tetap
 - [x] Project baru: **Credit Risk Analysis** (GCP/BigQuery/Looker Studio) → Live: Looker Studio
+- [x] Project baru: **Production Process Optimization** (Python EDA, manufaktur hybrid) → Code: `https://github.com/oiyogs/Optimation_SDI`
 - [x] Tombol Live/Code project pintar — muncul hanya jika `href` terisi (logika di `js/main.js`)
 - [x] Link Churn Prediction Code → `https://github.com/oiyogs/Churn_prediction`
 - [x] Project dinonaktifkan sementara (di-comment, file belum ketemu): **BI Dashboard**, **NVIDIA Stock Prediction**
@@ -43,6 +44,7 @@ Tech stack: HTML5, CSS3 (Vanilla), JavaScript (Vanilla) — no framework, pure s
 - [ ] `price.jpg` — Clothing Price Prediction
 - [ ] `segmentation.jpg` — Customer Segmentation (kalau belum ada)
 - [ ] `credit-risk.jpg` — Credit Risk Analysis
+- [ ] `optimization.jpg` — Production Process Optimization
 - [ ] `dashboard.jpg` — BI Dashboard (saat card diaktifkan lagi)
 - [ ] `stock.jpg` — NVIDIA Stock Prediction (saat card diaktifkan lagi)
 
@@ -50,6 +52,7 @@ Tech stack: HTML5, CSS3 (Vanilla), JavaScript (Vanilla) — no framework, pure s
 - [ ] Live — Churn Prediction (Code sudah ada)
 - [ ] Live — Clothing Price Prediction (Code sudah ada)
 - [ ] Live — Customer Segmentation (Code sudah ada)
+- [ ] Live — Production Process Optimization (Code sudah ada)
 - [ ] Code — Credit Risk Analysis (Live sudah ada)
 
 ### TODO — Card dinonaktifkan (aktifkan lagi: hapus pembungkus `<!-- DISABLED ... -->` di index.html)
@@ -88,10 +91,10 @@ D:\kuliah\Portofolio\
 |------------|--------|---------|
 | Navbar     | Done   | Logo `<KYS/>`, sticky scroll, hamburger mobile |
 | Hero       | Done   | Particle canvas, typewriter, 3 floating badge, foto profil |
-| About      | Done   | Stat cards (5+ projects, 3 orgs, 1 internship) — bisa diklik |
+| About      | Done   | Stat cards (6+ projects, 3 orgs, 1 internship) — bisa diklik |
 | Skills     | Done   | Progress bars + tag cloud (icon FA Free semua) + soft skills |
 | Experience | Done   | Tab Work (1 entry) / Organizations (5 entries), data dari CV |
-| Projects   | Done   | 5 card aktif + 2 dinonaktifkan (di-comment), tombol Live/Code muncul jika link terisi |
+| Projects   | Done   | 6 card aktif + 2 dinonaktifkan (di-comment), tombol Live/Code muncul jika link terisi |
 | Contact    | Done   | 4 contact cards + form → Formspree (email real) |
 | Footer     | Done   | Social icons (rata kanan) + copyright |
 
